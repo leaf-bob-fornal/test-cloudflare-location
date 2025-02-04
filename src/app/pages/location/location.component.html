@@ -1,7 +1,21 @@
 <div class="wrapper">
-  <h2>Testing Cloudflare Location Information</h2>
-  <div>City: <span id="city" class="city">{{city}}</span></div>
-  <div>State: <span id="state" class="state">{{state}}</span></div>
-  <div>Zipcode: <span id="zipcode" class="zipcode">{{zipcode}}</span></div>
-  <div>IP Address: <span id="ip" class="ip">{{ip}}</span></div>
+  <h2>Cloudflare Location Information</h2>
+  <div>City:
+    <span id="city" class="city">{{city}}</span>
+  </div>
+  <div>State:
+    <span id="state" class="state">{{state}}</span>
+  </div>
+  <div>Zipcode:
+    <span id="zipcode" class="zipcode">{{zipcode}}</span>
+  </div>
+  <div (click)="copyIp()" class="ip-wrapper">IP Address:
+    <span id="ip" class="ip">{{ip}} <img class="copy-icon" src="/assets/images/copy.png" /></span>
+  </div>
+  
+  <div class="functionality">
+    <a href="https://nordvpn.com/ip-lookup/">NordVPN IP Lookup</a>
+  </div>
+
+  <!-- <a href="https://www.flaticon.com/free-icons/paper" title="paper icons">Paper icons created by Gregor Cresnar - Flaticon</a> -->
 </div>

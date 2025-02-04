@@ -28,4 +28,8 @@ export class LocationComponent {
       }
     }, 1000);
   }
+
+  copyIp = () => {
+    navigator.clipboard.writeText(this.ip);
+  };
 }
