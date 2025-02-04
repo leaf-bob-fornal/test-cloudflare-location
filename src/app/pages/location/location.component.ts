@@ -26,7 +26,7 @@ export class LocationComponent {
         clearTimeout(this.timeoutId);
         console.log('timeout cleared');
       }
-    }, 1000);
+    }, 100);
   }
 
   copyIp = () => {
